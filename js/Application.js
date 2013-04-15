@@ -62,7 +62,7 @@ $(function(){
 
 	rebuildMarkdownHTMLAsBootstrap();
 	watchTopNavToUpdateLeftNav();
-    attachAffixLogic();
+/*     attachAffixLogic(); */
         
     // Quick Fix for Header obscure anchors
     // Future fix use JS scroll adjustment https://github.com/twitter/bootstrap/issues/193
