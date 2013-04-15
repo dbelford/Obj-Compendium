@@ -77,7 +77,7 @@ $(function(){
     });
 
     // Build left-nav
-    $('#left-nav').append("<ul class='affix nav nav-tabs nav-stacked' style='margin-top:90px;' />");
+    //$('#left-nav').append("<ul class='affix nav nav-tabs nav-stacked' style='margin-top:90px;' />");
     $('#left-nav ul').append($navs.filter('h3'));
     $('.navbar ul').append($navs.filter('h2'));
     
