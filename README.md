@@ -4,7 +4,7 @@
 
 A compilation of Obj-C snippets, classes and frameworks for accomplishing common tasks in OSX & iOS applications.  Heavily inspired by Bootstrap's documentation.  This is not a framework in itself though.
 
-You can use this as a starting point to discover useful classes for issues not solved or implemented by Apple's various frameworks.  Or use it as a jumping off point for getting to popular open source Obj-C classes and frameworks hosted on Github.
+You can use the compendium as a starting point to discover useful classes for issues not solved or implemented by Apple's various frameworks.  Or use it as a jumping off point for getting to popular open source Obj-C classes and frameworks hosted on Github.
 
 ##Jump To
 
