@@ -83,6 +83,8 @@ ALActionBlocks is an Objective-C category on UIControl that allows for handling 
 
 >A drop-in replacement for UISegmentedControl mimicking the style of the segmented control used in Google Currents and various other Google products.
 
+<github user="HeshamMegid" repo="HMSegmentedControl"/>
+
 ###Labels
 
 ##### Replacement Label - *[TTTAttributedLabel](https://github.com/mattt/TTTAttributedLabel)*
@@ -151,6 +153,12 @@ Photoshop layer styles for iOS icons. Stop maintaining a separate file for each 
 
 <github user="onemightyroar" repo="YRDropdownView"> </github>
 
+#####Notification Option 2 - *[TSMessages](https://github.com/toursprung/TSMessages)*
+
+>Easy to use and customizable messages/notifications for iOS à la Tweetbot
+
+<github user="toursprung" repo="TSMessages"> </github>
+
 #####??? - *[MKInfoPanelDemo](https://github.com/MugunthKumar/MKInfoPanelDemo)*
 
 >Non-modal, non-intrusive Info Panel implementation as seen on some "popular" apps
@@ -178,6 +186,10 @@ Not certain one this one looks like because I haven't downloaded.
 >Simple block-based alerts and huds for iPhone apps.
 
 <github user="mobitar" repo="MBAlertView"> </github>
+
+#####Alert View 2 - *[TSAlertView](https://github.com/TomSwift/TSAlertView)*
+
+<github user="TomSwift" repo="TSAlertView" />
 
 #####Progress Bar - *[KOAProgressBar](https://github.com/mperovic/KOAProgressBar)* **WARNING**
 
@@ -218,6 +230,37 @@ A "drop-in" solution for building stylish app introductions and tutorials. Now s
 
 <github user="burtlo" repo="QuadCurveMenu"> </github>
 
+###TableView Additions
+
+#####Cell Labels - *[ELCTextFieldCell](https://github.com/elc/ELCTextFieldCell)*
+
+>A demo project for the UITableViewCell subclass ELCTextFieldCell to help with form creation
+
+<github user="elc" repo="ELCTextFieldCell" />
+
+#####Whole Shebang - *[QuickDialog](https://github.com/escoz/QuickDialog)*
+
+>QuickDialog - Quick and easy dialog screens for iOS
+
+<github user="escoz" repo="QuickDialog" />
+
+#####Pull To Refresh - *[EGOTableViewPullRefresh](https://github.com/enormego/EGOTableViewPullRefresh)*
+
+>A similar control to the pull down to refresh control created by atebits in Tweetie 2.
+
+There are a handful of ways to implement pull to refresh, so hear are some other examples to examine
+
+- [PullToRefreshTransform](https://github.com/thermogl/PullToRefreshTransform)
+	This one does an unfolding animation
+- [PHRefreshTriggerView](https://github.com/pothibo/PHRefreshTriggerView)
+	This one avoids co-opting the UITableViewDelegate by using a gesture recognizer
+- [Leah Culver's](https://github.com/leah/PullToRefresh)
+
+###Graphs
+
+#####Graphing Framework - *[CorePlot](https://code.google.com/p/core-plot/)*
+
+>Core Plot is a plotting framework for OS X and iOS. It provides 2D visualization of data, and is tightly integrated with Apple technologies like Core Animation, Core Data, and Cocoa Bindings.
 
 ##Animation
 
@@ -234,6 +277,8 @@ SKBounceAnimation is a CAKeyframeAnimation subclass that creates an animation fo
 #####Multi-step Animation - *[CPAnimationSequence](https://github.com/yangmeyer/CPAnimationSequence)*
 
 >Describe multi-step UIView animation sequences declaratively.
+
+<github user="yangmeyer" repo="CPAnimationSequence"/>
 
 ##Data Types
 
@@ -265,13 +310,30 @@ An NSDate category for turning NSDates into plain english NSStrings.
 
 #####Date Calculations - *[DateCalculations](https://github.com/oscardelben/DateCalculations)*
 
+>Date Calculations for Cocoa Inspired by Ruby on Rails
+
 An NSDate category for creating and manipulating dates with plain English method names (eg. [NSDate endOfWeek], [NSDate yesterday]).
 
 <github user="oscardelben" repo="DateCalculations"> </github>
 
+###JSON
+
+##### Apple Default - *[NSJSONSerialization](http://developer.apple.com/library/ios/#documentation/Foundation/Reference/NSJSONSerialization_Class/Reference/Reference.html)*
+
+I think the consensus is that Apple's implementation is fast enough.  But that JSONKit is still slightly faster.  Your networking library will generally have some JSON support.
+
+Alternatives
+
+- [JSONKit](https://github.com/johnezang/JSONKit)
+- [SBJSON](https://github.com/stig/json-framework/)
+
 ##General
 
 ###Networking
+
+#####Connection Detection - *[Reachability](https://github.com/tonymillion/Reachability)*
+
+<github user="tonymillion" repo="Reachability"/>
 
 #####NSURL & JSON - *[AFNetworking](https://github.com/AFNetworking/AFNetworking)*
 
@@ -287,17 +349,47 @@ An NSDate category for creating and manipulating dates with plain English method
 
 ###Toolkits
 
-#####Toolkits - *[SSToolkit](https://github.com/soffes/sstoolkit)*
+#####Dev Kit - *[SSToolkit](https://github.com/soffes/sstoolkit)*
 
 >SSToolkit makes life easier. It is made up of various view controllers, views, and categories that I use in all of my apps. Feel free to fork the repo and make it better.
 
 <github user="soffes" repo="sstoolkit"> </github>
 
-#####Toolkits - *[ShareKit](https://github.com/ShareKit/ShareKit)*
+#####Dev Kit - *[NimbusKit](https://github.com/jverkoey/nimbus)*
+
+>The iOS framework that grows only as fast as its documentation
+
+A full featured framework that helps accomplish many common tasks on iOS.  The successor to [Three20Framework](https://github.com/facebook/three20).
+
+<github user="jverkoey" repo="nimbus"> </github>
+
+#####Social Sharing - *[ShareKit](https://github.com/ShareKit/ShareKit)*
 
 >Drop in sharing features for all iPhone and iPad apps
 
 <github user="ShareKit" repo="ShareKit"> </github>
+
+#####Crash Reports - *[QuincyKit](https://github.com/therealkerni/QuincyKit)*
+
+>Live crash report management for iOS and Mac OS X. AppStore ready on iOS only! Follow news on Twitter
+
+This requires hosting your own PHP server to run. [HockeyApp](http://hockeyapp.net/) open sources the code and offers the hosting as a paid service. 
+
+#####Beta App Distribution - *[HockeyKit](https://github.com/therealkerni/HockeyKit)*
+
+>A software update kit for iOS and Android. Provided as is. For more functionality and maintained work
+
+This requires hosting your own PHP server to run. [HockeyApp](http://hockeyapp.net/) open sources the code and offers the hosting as a paid service. 
+
+###Tests
+
+#####Behavior Driven Development - *[Kiwi](https://github.com/allending/Kiwi)*
+
+>Kiwi is a Behavior Driven Development library for iOS development. The goal is to provide a BDD library that is exquisitely simple to setup and use.
+
+May make writing tests easier and clearer.
+
+<github user="allending" repo="Kiwi" />
 
 ###Routes
 
@@ -311,35 +403,48 @@ Routable, an in-app native URL router, for iOS
 
 ###Misc
 
+#####Status Bar - *[MTStatusBarOverlay](https://github.com/myell0w/MTStatusBarOverlay)*
+
+>A custom iOS status bar overlay seen in Apps like Reeder, Evernote and Google Mobile App
+
+<github user="MTStatusBarOverlay" repo="MTStatusBarOverlay" />
+
+#####Keychain Access - *[STKeyChain](https://github.com/ldandersen/STUtils/blob/master/Security/STKeychain.h)*
+
+Makes dealing with the keychain on iPhone a little simpler.
+
+<github user="ldandersen" repo="STUtils" />
+
+#####Keyboard Improvement - *[BSKeyboardControls](https://github.com/simonbs/BSKeyboardControls)*
+
+>Put controls above the keyboard on your iPhone or iPad app. 
+
+<github user="simonbs" repo="BSKeyboardControls" />
+
+#####Keyboard Improvement 2 - *[EKKeyboardAvoiding](https://github.com/kirpichenko/EKKeyboardAvoiding)*
+
+>It's an universal solution for keyboard avoiding for iOS that allows automatically change content inset of UIScrollView and it's subclasses. When keyboard is presented you will be able to see all content of your scroll views.
+
+<github user="kirpichenko" repo="EKKeyboardAvoiding" />
+
+#####Syntactic Sugar - [ConciseKit](https://github.com/petejkim/ConciseKit)
+
+>A set of Objective-C additions and macros that helps you write code more quickly.
 
 <br/>
 
-<style>
-	#left-nav a {
-		font-family: 'arvo', 'sans';
-		font-weight: 700;
-	}
-	
-	.navbar a {
-		font-family: 'arvo', 'sans';
-		font-weight: 700;
-	}
-	
-	h2.affix {
-		top: 40px;
-		position: fixed;
-	}
-
-</style>
 
 <link href='http://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" >
-<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" ></p>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" >
+<link rel="stylesheet" href="css/compendium.css" >
 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
 <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.js" type="text/javascript"></script>
-<script src="http://dbelford.github.io/Obj-Compendium/js/Application.js" type="text/javascript"> </script>
+<!-- <script src="http://dbelford.github.io/Obj-Compendium/js/Application.js" type="text/javascript"> </script> -->
+<script src="js/Application.js" type="text/javascript" > </script>
 
 
 <script>
@@ -357,7 +462,7 @@ Routable, an in-app native URL router, for iOS
     }
 
 	$(function(){
-		$('github').each( makeGithubButtons );
+		//$('github').each( makeGithubButtons );
 		
 		//setTimeout(function() {
 		//	$('github').each( makeGithubButtons );

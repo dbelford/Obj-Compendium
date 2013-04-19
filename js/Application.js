@@ -1,9 +1,14 @@
 rebuildMarkdownHTMLAsBootstrap = function( ) {
 	var $oldContent = $('body').contents().detach();
-    $('body').css('padding-top', '90px');
     
-    var $leftnav = $("<div id='left-nav' class='span3'> </div>")
-    	.append("<ul class='affix nav nav-tabs nav-stacked' style='margin-top:90px;' />");
+    var $leftnav = $("<div id='left-nav' class='span3'> </div>");
+    
+    $leftnav
+    	.append("<div class='affix'></div>")
+    	.children()
+    	.append("<ul id='left-nav-prev' class='nav nav-tabs nav-stacked hidden-phone' />")
+    	.append("<ul id='left-nav-content' class='nav nav-tabs nav-stacked hidden-phone' />")
+    	.append("<ul id='left-nav-next' class='nav nav-tabs nav-stacked hidden-phone' />");
     
     var $container = $("<div class='container'></div>")
 			.append($leftnav)
@@ -36,11 +41,28 @@ watchTopNavToUpdateLeftNav = function () {
         var $currentH2 = $(idString);
         var $clonedNavElements = $currentH2.nextUntil('h2', 'h3').clone();
         $('ul.nav-tabs').empty();
-        $('ul.nav-tabs').append($clonedNavElements);
+        $('#left-nav-content').append($clonedNavElements);
+        
+        
+        
+        var $prevH2 = $(idString).prevAll('h2').first().clone();
+        var $nextH2 = $(idString).nextAll('h2').first().clone();
+        
+	    $('#left-nav-prev').append($prevH2);
+	    $('#left-nav-next').append($nextH2);
+	    
 
         $clonedNavElements.replaceWith(function() {
             return '<li><a href="#'+$(this).text().replace(/\s+/g, "-") +'" >' + $(this).text() + '</a></li>';
         });
+        
+        $prevH2.replaceWith(function() {
+            return '<li><a href="#'+$(this).text().replace(/\s+/g, "-") +'" >' + $(this).text() + ' <i class="pull-right icon-chevron-up" /></a></li>';
+        });
+        $nextH2.replaceWith(function() {
+            return '<li><a href="#'+$(this).text().replace(/\s+/g, "-") +'" >' + $(this).text() + ' <i class="pull-right icon-chevron-down"/></a></li>';
+        });
+        
     })
     
 }
@@ -78,7 +100,7 @@ $(function(){
 
     // Build left-nav
     //$('#left-nav').append("<ul class='affix nav nav-tabs nav-stacked' style='margin-top:90px;' />");
-    $('#left-nav ul').append($navs.filter('h3'));
+    $('#left-nav-content').append($navs.filter('h3'));
     $('.navbar ul').append($navs.filter('h2'));
     
     

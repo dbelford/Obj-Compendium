@@ -1,0 +1,71 @@
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+
+.navbar a, h3, h4, h5, p {
+	font-family: 'Raleway', 'sans';
+} 
+
+
+h1, h2,  .brand, #left-nav a {
+	font-family: 'arvo', 'sans';
+}
+
+.navbar a, #left-nav a {
+	font-weight: 700;
+}
+
+h1, h2, h3, .navbar a {
+	font-weight: 400;
+}
+
+
+h2.affix {
+	top: 40px;
+	position: fixed;
+}
+
+#left-nav-prev a, #left-nav-next a {
+	min-width: 120px;
+	border: none;
+	font-weight: 400;
+}
+
+#left-nav-prev i, #left-nav-next i {
+	padding-top: 4px;
+}
+
+#left-nav > div {
+	margin-top: 90px;
+}
+
+#left-nav a {
+	color: #a4c0d6;
+	transition: color 0.2s ease-in;
+}
+
+#left-nav:hover a {
+	color: #0088cc;
+}
+
+body {
+	padding-top: 90px;
+}
+
+.nav-header {
+	padding: 0px;
+	line-height: 14px;
+}
+
+@media (max-width: 979px) {
+	body {
+		padding-top: 0px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 979px) { 
+	#left-nav > div {
+		margin-top: 20px;
+	}
+	#left-nav ul {
+	max-width: 170px;
+	}
+}
